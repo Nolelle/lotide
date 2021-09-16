@@ -25,3 +25,5 @@ const countLetters = function (sentence) {
 };
 
 console.log(countLetters("lighthouse in the house"));
+assertEqual(countLetters("lighthouse in the house").h, 4);
+assertEqual(countLetters("lighthouse in the house").e, 3);
