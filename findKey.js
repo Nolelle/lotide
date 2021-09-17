@@ -1,13 +1,3 @@
-// const findKeyByValue = function (obj, value) {
-//   //obj is an object, value is
-//   //search for a key on an object where its value matches a given value
-//   let keys = Object.keys(obj);
-//   for (let key of keys) {
-//     if (obj[key] === value) {
-//       return key;
-//     }
-//   }
-// };
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
