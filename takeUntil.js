@@ -1,19 +1,6 @@
-const eqArrays = function (arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i] || arr1.length !== arr2.length) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require("./eqArrays");
+const assertArraysEqual = require("./assertArraysEqual");
 
-const assertArraysEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 // The array to work with
 // The callback (which Lodash calls "predicate")
 //The function will return a "slice of the array with elements taken from the beginning." It should keep going until the callback/predicate returns a truthy value
